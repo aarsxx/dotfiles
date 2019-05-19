@@ -1,4 +1,8 @@
 # Swift and iOS Workshop
+<div align="center">
+<img width="900" height="400" src="https://cdn-images-1.medium.com/max/800/1*e1ndrqm2zZhe7IVjA6ugpw.jpeg"><br>
+Learn about ECMA Style Script
+</div>
 
 Have you wanted to learn how to make app? Don't know how? Don't even know where to start? Well you've come to the right place!
 
