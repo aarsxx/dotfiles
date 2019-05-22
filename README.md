@@ -24,3 +24,8 @@ Questions
 --------------------
 
 Have a question? Feel free to contact me on <a href="http://www.twitter.com/leonardodika_" target="_blank">Twitter</a>
+
+
+License
+--------------------
+
