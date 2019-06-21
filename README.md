@@ -30,6 +30,11 @@ Since past Apple's keynote, where **SwiftUI** was announced, tons of docs, examp
 **SwiftUI** is an innovative, exceptionally simple way to build user interfaces across all Apple platforms with the power of Swift. Build user interfaces for any Apple device using just one set of tools and APIs. With a declarative Swift syntax that’s easy to read and natural to write, SwiftUI works seamlessly with new Xcode design tools to keep your code and design perfectly in sync. Automatic support for Dynamic Type, Dark Mode, localization, and accessibility means your first line of **SwiftUI** code is already the most powerful UI code you’ve ever written.
 
 
+#### 🎓 Courses
+* **[Learn SwiftUI](https://learn.designcode.io/swiftui)**. by [Meng To](https://twitter.com/mengto)
+* **[SwiftUI Quick Start Guide with iOS 13 and Xcode 11](https://www.udemy.com/swiftui-quick-start-guide-with-ios-13-and-xcode-11/?couponCode=JUANGITHUB)** . by [DevTechie Interactive](https://www.udemy.com/user/anoop-tomar/)
+
+
 Questions
 --------------------
 
