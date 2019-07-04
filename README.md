@@ -11,7 +11,7 @@ This workshop will go through a tour of Swift and cover how to make a unit conve
 
 
 Getting Started
---------------------
+-----------------------
 
 Swift Structures has been optimized for **Swift 4.2** (e.g., Xcode 10.0) or later. The directories are organized as follows:
 + Source - Code for all Swift data structures, algorithms and source extensions
