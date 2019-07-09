@@ -37,7 +37,7 @@ Since past Apple's keynote, where **SwiftUI** was announced, tons of docs, examp
 - macOS 15 Beta
 - Xcode 11.0 Beta
 - iOS 13.0 Beta
-
+- iPadOS 13.0 Beta
 
 ## Directory：
 
