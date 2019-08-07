@@ -18,7 +18,6 @@ Swift Structures has been optimized for **Swift 4.2** (e.g., Xcode 10.0) or late
 + Example - An empty iOS single-view application template
 + SwiftTests - Unit tests with XCTest Framework
 
-
 Swift UI
 --------------------
 <div align="center">
