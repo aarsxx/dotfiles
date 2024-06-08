@@ -1,56 +1,53 @@
-# Dotfiles
+# `$HOME`
 
 Dotfiles that make anywhere feel like `/home`.
 
-## Installation
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/B0B1Z3IGW)
 
-Run the command below in your terminal and the installation will start *automatically*.
+### Install Oh My Zsh
 
-Just follow the prompts and you’ll be fine. 👌
+Install Zsh and [Oh My Zsh](https://ohmyz.sh/).
 
-```shell
-git clone https://github.com/andikaleonardo/dotfiles.git ~/.dotfiles && ~/.dotfiles/install
+```sh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
+# Inspect the install script
+git clone https://github.com/ohmyzsh/ohmyzsh.git
+vim ./tools/install.sh
+
+# Change the default shell to /bin/zsh
+sudo chsh -s /bin/zsh "$USER"
 ```
 
-## 
+### Generate SSH Key
 
-1. A super 🔥 **Terminal**…
+Use `ssh-keygen` to generate a new SSH key.
 
-    ![iTerm2 Screenshot](./assets/iterm.png)  
+```sh
+# Set to username@hostname[.home|local]
+read KEY_COMMENT
 
-    Which is [iTerm2] with
+ssh-keygen -o -a 256 -t ed25519 -C "$KEY_COMMENT"
+```
 
-    - [Z-Shell] \(zsh)
-    - [JetBrains Mono]  as font
-    - [Prezto] with [garrett prompt]
-    - [Seti] color scheme
+#### Add SSH Key to GitHub
 
-## 
+You must add the new SSH key to GitHub in order to clone this repository and private repositories. Visit https://github.com/settings/keys or use the [GitHub CLI](https://cli.github.com/manual/) to add the key.
 
-3. A nice stack of (coding optimized 👀) **fonts**…
+```sh
+# Don't add your SSH key yet!
+gh auth login -s write:public_key -s codespace
 
-    - [FiraCode]
-    - [CamingoCode]
-    - [Anonymous Pro]
-    - [Inconsolata]
-    - [Inter]
-    - [JetBrains Mono]
+gh ssh-key add ~/.ssh/id_ed25519.pub --title "$KEY_COMMENT"
+```
 
-    <sub>See [`brew/cask/fonts`](brew/casks/fonts) for the full list of fonts that will be installed. Adjust it to your personal taste.</sub>
+### Install (these) Dotfiles
 
+Clone this repo and install my dotfiles using `./install.sh`.
 
-<!-- Terminal -->
-[Z-Shell]: http://www.zsh.org/
-[iTerm2]: https://github.com/gnachman/iTerm2
-[Prezto]: https://github.com/sorin-ionescu/prezto
-[garrett prompt]: https://github.com/chauncey-garrett/zsh-prompt-garrett
-[Seti]: https://github.com/mbadolato/iTerm2-Color-Schemes/tree/master/schemes
+```sh
+git clone git@github.com:jungaretti/dotfiles.git
 
-
-<!-- Fonts -->
-[FiraCode]: https://github.com/tonsky/FiraCode
-[CamingoCode]: http://www.janfromm.de/typefaces/camingomono/camingocode/
-[Anonymous Pro]: http://www.marksimonson.com/fonts/view/anonymous-pro
-[Inconsolata]: http://levien.com/type/myfonts/inconsolata.html
-[JetBrains Mono]: https://jetbrains.com/mono
-[Inter]: https://rsms.me/inter/
+cd dotfiles
+./install.sh
+```
