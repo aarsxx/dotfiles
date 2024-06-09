@@ -46,7 +46,7 @@ gh ssh-key add ~/.ssh/id_ed25519.pub --title "$KEY_COMMENT"
 Clone this repo and install my dotfiles using `./install.sh`.
 
 ```sh
-git clone git@github.com:jungaretti/dotfiles.git
+git clone git@github.com:andikaleonardo/dotfiles.git
 
 cd dotfiles
 ./install.sh
