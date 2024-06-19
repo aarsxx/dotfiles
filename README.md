@@ -1,8 +1,8 @@
-# `$HOME`
+# Dotfiles
 
-Dotfiles that make anywhere feel like `/home`.
+Presets that make anywhere feel like `$HOME`
 
-[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/B0B1Z3IGW)
+## Getting Started
 
 ### Install Oh My Zsh
 
